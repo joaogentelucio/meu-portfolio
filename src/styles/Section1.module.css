@@ -1,0 +1,81 @@
+.homeSelection {
+    padding-top: 30px !important;
+}
+  
+
+.homeContent {
+    padding: 9rem 0 2rem !important;
+    color: whitesmoke;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+  
+.wave {
+    animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.1s; /* Change to speed up or slow down */
+    animation-iteration-count: infinite; /* Never stop waving :) */
+    transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(14deg);
+    } /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+        transform: rotate(-8deg);
+    }
+    30% {
+        transform: rotate(14deg);
+    }
+    40% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    } /* Reset for the last half to pause */
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.heading {
+    font-size: 2.4em !important;
+    padding-left: 50px !important;
+}
+
+.headingName {
+    font-size: 2.5em !important;
+    padding-left: 45px !important;
+}
+  
+.mainName {
+    color: #4169E1;
+}
+
+.logo {
+    width: 600px; 
+    height: 600px; 
+}
+
+@media (max-width: 800px) {
+    .homeContent {
+        padding: 0 !important;
+        padding-top: 50px !important;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .logo {
+        width: 300px; 
+        height: 300px; 
+    }
+}
