@@ -1,5 +1,6 @@
-//import { useTheme } from '@/context/ThemeContext';
-import Header from "@/components/HeaderComponent";
+import Header from "@/components/header";
+import { useTheme } from '@/context/ThemeContext';
+import themes from '@/themes';
 import Type from "./Type";
 import styles from '@/styles/Section1.module.css';
 import logo from "@/assets/logo.png";
@@ -9,7 +10,7 @@ interface HeaderProps {
 }
 
 export default function Section1({ scrollToSection }: HeaderProps) {
-  //const { theme} = useTheme();
+  const { theme } = useTheme();
 
   return (
     <section id="section1" style={{ height: '100vh' }}>
@@ -17,7 +18,7 @@ export default function Section1({ scrollToSection }: HeaderProps) {
       <div className={styles.homeSelection}>
         <div className={styles.homeContent}>
           <div className={styles.homeHeader}>
-            <h1 className={styles.heading}>
+            <h1 className={styles.heading} style={{ color: theme === themes.darkTheme ? theme.colors.text : theme.colors.primary }}>
               Olá!{" "}
               <span className={styles.wave} role="img" aria-labelledby="wave">
                 👋🏻

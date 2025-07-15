@@ -2,7 +2,7 @@ const lightTheme = {
   colors: {
     primary: '#4169E1',
     secondary: '#6495ED',
-    text: '#000000',
+    text: '#292929ff',
     success: '#50c86e',
     error: '#f45563',
     silver: '#C0C0C0',
