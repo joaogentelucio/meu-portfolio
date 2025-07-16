@@ -1,0 +1,30 @@
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  background: transparent;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.card p {
+  margin: 4px 0;
+}
+
+.card a {
+  color: #007bff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}

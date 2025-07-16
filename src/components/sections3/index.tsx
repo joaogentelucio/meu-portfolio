@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTheme } from '@/context/ThemeContext';
-import styles from '@/styles/Section3.module.css';
+import styles from './style.module.css';
 
 
 const Section3: React.FC = () => {

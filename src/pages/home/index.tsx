@@ -1,10 +1,10 @@
 import { useTheme } from '@/context/ThemeContext';
-import styles from '@/styles/Main.module.css';
-import Section1 from '@/components/sections1/Section1';
-import Section2 from '@/components/sections2/Section2';
-import Section3 from '@/components/sections3/Section3';
+import styles from './style.module.css';
+import Section1 from '@/components/sections1';
+import Section2 from '@/components/sections2';
+import Section3 from '@/components/sections3';
 
-export default function MainContent() {
+export default function Home() {
   const { theme } = useTheme();
   const scrollToSection = (id: string) => {
     const section = document.getElementById(id);

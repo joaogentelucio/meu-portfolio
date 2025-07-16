@@ -2,7 +2,7 @@ import Header from "@/components/header";
 import { useTheme } from '@/context/ThemeContext';
 import themes from '@/themes';
 import Type from "./Type";
-import styles from '@/styles/Section1.module.css';
+import styles from './style.module.css';
 import logo from "@/assets/logo.png";
 
 interface HeaderProps {

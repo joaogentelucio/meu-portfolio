@@ -1,13 +1,10 @@
-import React from 'react';
-import { ThemeProvider } from '@/context/ThemeContext';
-import MainContent from '@/components/MainContent';
+import { ScrollProvider } from '@/context/ScrollContext';
+import Home from '@/pages/home';
 
-const App: React.FC = () => {
+export default function App() {
   return (
-    <ThemeProvider>
-        <MainContent />
-    </ThemeProvider>
+    <ScrollProvider>
+      <Home />
+    </ScrollProvider>
   );
 };
-
-export default App;
