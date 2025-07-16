@@ -36,4 +36,13 @@ export const projetos: Projeto[] = [
     websiteURL: "https://adrianasaty.github.io/ironhack-project1-craze-maze/index.html",
     codeURL: "https://github.com/AdrianaSaty/ironhack-project1-craze-maze",
   },
+  {
+    title: "Project Craze Maze",
+    subtitle: "Jul 2019 - May 2019",
+    srcImg: "/src/assets/images/project1-craze-maze.gif",
+    description: "Game to escape the maze.",
+    technologies: "Technologies: JavaScript, HTML, CSS, Canvas Graphics",
+    websiteURL: "https://adrianasaty.github.io/ironhack-project1-craze-maze/index.html",
+    codeURL: "https://github.com/AdrianaSaty/ironhack-project1-craze-maze",
+  },
 ];
