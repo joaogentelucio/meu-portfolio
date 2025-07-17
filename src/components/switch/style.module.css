@@ -1,6 +1,6 @@
 .switch {
-  width: 42px;
-  height: 22px;
+  width: 48px;
+  height: 24px;
   margin: 0;
   padding: 0;
   line-height: 0;
@@ -29,10 +29,10 @@
 
 .icon {
   position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 18px;
-  height: 18px;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
   font-size: 12px;
   background-color: white;
   border-radius: 50%;
@@ -40,7 +40,7 @@
   align-items: center;
   justify-content: center;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, background 0.3s ease;
+  transition: transform 0.3s ease;
   z-index: 2;
 }
 
@@ -49,5 +49,5 @@ input:checked + .slider {
 }
 
 input:checked + .slider .icon {
-  transform: translateX(20px); 
+  transform: translateX(24px);
 }

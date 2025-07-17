@@ -13,7 +13,7 @@ export default function Section1({ scrollToSection }: HeaderProps) {
   const { theme } = useTheme();
 
   return (
-    <section id="section1" style={{ height: '100vh' }}>
+    <section id="section1" className={styles.section}>
       <Header scrollToSection={scrollToSection} />
       <div className={styles.homeSelection}>
         <div className={styles.homeContent}>

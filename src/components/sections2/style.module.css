@@ -1,11 +1,14 @@
 .section {
+  width: 100%;
   min-height: 100vh;
   padding: 40px;
+  padding-top: 120px; /* ajusta se o seu header tiver 80px de altura */
   text-align: center;
   box-sizing: border-box;
 }
 
 .section h2 {
+  padding-top: 0px;
   padding-bottom: 50px;
 }
 

@@ -2,7 +2,7 @@
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 16px;
-  background: transparent;
+  background: rgba(89, 113, 248, 0.233);
 }
 
 .card img {
@@ -10,21 +10,42 @@
   border-radius: 8px;
 }
 
+.card h1 {
+  font-size: 1.6em;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
 .card h3 {
-  margin-top: 12px;
-  margin-bottom: 4px;
+  font-size: 1em;
+  color: #ccc;
+  margin-top: 8px;
+  margin-bottom: 10px;
 }
 
 .card p {
-  margin: 4px 0;
+  color: #ccc;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: rgba(129, 129, 129, 0.24);
 }
 
-.card a {
-  color: #007bff;
+.cardLinks {
+  margin-top: 20px;
+  padding-top: 6px;
+  border-top: 1px solid #ccc;
+  height: 30px;
+}
+.cardLinks a {
+  font-size: 1em;
+  color: #ccc;
+  font-weight: bold;
   text-decoration: none;
   margin: 0 5px;
+  padding-top: 20px;
 }
 
 .card a:hover {
+  color: #ffffff70;
   text-decoration: underline;
 }
