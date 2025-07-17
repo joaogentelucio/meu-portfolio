@@ -15,7 +15,7 @@ export const projetos: Projeto[] = [
     srcImg: "https://raw.githubusercontent.com/joaogentelucio/meu-portfolio/refs/heads/main/src/assets/card1.png?token=GHSAT0AAAAAADGWFZ5G4IGYXO73YJO7A4WO2DYH24A",
     description: "Valida os inputs de email e senha impedindo que passem nulos.",
     technologies: "Tecnologias: react.js, react-icons",
-    websiteURL: "validar-email-peach.vercel.app",
+    websiteURL: "https://validar-email-peach.vercel.app",
     codeURL: "https://github.com/joaogentelucio/validar-email",
   },
   {
