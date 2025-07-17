@@ -18,7 +18,7 @@ export const projetos: Projeto[] = [
   },
   {
     title: "Conversor",
-    srcImg: "/src/assets/images/project1-craze-maze.gif",
+    srcImg: "https://raw.githubusercontent.com/joaogentelucio/meu-portfolio/refs/heads/main/src/assets/card2.png",
     description: "Converte real em dolar ou euro.",
     technologies: "Tecnologias: JavaScript - HTML - CSS- Netlify",
     websiteURL: "https://bejewelled-dodol-0892ac.netlify.app",
@@ -26,7 +26,7 @@ export const projetos: Projeto[] = [
   },
   {
     title: "Sign-in e Sign-up com crud direto na api",
-    srcImg: "/src/assets/images/project1-craze-maze.gif",
+    srcImg: "https://raw.githubusercontent.com/joaogentelucio/meu-portfolio/refs/heads/main/src/assets/card3.png",
     description: "Web site realiza cruds em api atráves da logica php.",
     technologies: "Tecnologias: PHP - JavaScript - HTML - CSS - Netlify",
     websiteURL: "https://cruds-php.netlify.app",
@@ -34,7 +34,7 @@ export const projetos: Projeto[] = [
   },
   {
     title: "Portfólio(Este Aqui)",
-    srcImg: "/src/assets/images/project1-craze-maze.gif",
+    srcImg: "https://raw.githubusercontent.com/joaogentelucio/meu-portfolio/refs/heads/main/src/assets/card4.png",
     description: "Meu portfólio para mostrar meus projetos e aprendizados.",
     technologies: "Tecnologias: JavaScript - React.JS - Vite - Vercel",
     websiteURL: "https://meu-portfolio-inky-nine.vercel.app",
