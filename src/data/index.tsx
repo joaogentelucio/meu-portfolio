@@ -12,7 +12,7 @@ export const projetos: Projeto[] = [
   {
     title: "Validar Email",
     subtitle: "Mar 2025 - Abr 2025",
-    srcImg: "/src/assets/card1.png",
+    srcImg: "https://raw.githubusercontent.com/joaogentelucio/meu-portfolio/refs/heads/main/src/assets/card1.png?token=GHSAT0AAAAAADGWFZ5G4IGYXO73YJO7A4WO2DYH24A",
     description: "Valida os inputs de email e senha impedindo que passem nulos.",
     technologies: "Tecnologias: react.js, react-icons",
     websiteURL: "validar-email-peach.vercel.app",
