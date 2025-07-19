@@ -11,7 +11,7 @@ const Section3: React.FC = () => {
       <div className={styles.infoGroup}>
       <div className={styles.info}>
         <div className={styles.user}>
-          <img src='src\assets\user.png' />
+          <img src='https://raw.githubusercontent.com/joaogentelucio/meu-portfolio/refs/heads/main/src/assets/user.png' />
         </div>
         <h2>João Vitor</h2>
       </div>
