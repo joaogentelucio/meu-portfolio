@@ -1,11 +1,139 @@
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #f0f0f0;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+}
+
+.infoGroup {
+    width: 100%;
+    height: 70%;
+    display: flex;
+
+}
+
+.info {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.info img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #0000005d;
+    margin-top: 80px;
+}
+
+.info h2 {
+    font-size: 1.6em;
+    margin-top: 8px;
+}
+
+.sobreMim {
+    width: 60%;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.sobreMim h3 {
+    font-size: 2.2em;
+    margin-top: 90px;
+}
+
+.sobreMim p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    text-align: justify;
+    color: #e0e0e0;
+}
+
+.groupLink {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkSociais {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  background-color: rgba(255, 255, 255, 0.05);
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+/* WhatsApp */
+.whatsApp {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.icon:hover .whatsApp {
+  color: #25d366;
+}
+
+/* Instagram */
+.instagram {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.icon:hover .instagram {
+  color: #e4405f;
+}
+
+/* LinkedIn */
+.linkedin {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.icon:hover .linkedin {
+  color: #0077b5;
+}
+
+/* GitHub */
+.gitHub {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.icon:hover .gitHub {
+  color: #222;
+}
+
+
 .footer {
     width: 100%;
-    height: 10vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    font-size: 0.8em;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 0.85em;
+    color: #ccc;
     display: flex;
     align-items: center;
-    padding: 10px;
-    position: absolute;
-    bottom: 0 !important;
+    justify-content: center;
 }
