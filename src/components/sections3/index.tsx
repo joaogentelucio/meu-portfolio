@@ -45,7 +45,7 @@ const Section3: React.FC = () => {
         </span>
       </div>
       <footer className={styles.footer}>
-        <p>Copyright &copy; 2025 Gexxze.</p>
+        <p>Copyright &copy; 2025 - Desenvolvido por João Vitor.</p>
       </footer>
     </section>
   );

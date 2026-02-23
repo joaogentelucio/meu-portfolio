@@ -1,10 +1,12 @@
 import styles from './style.module.css';
+import { useTheme } from '@/context/ThemeContext';
 import { Projeto } from '@/data';
 
 export default function Card({ projeto }: { projeto: Projeto }) {
+    const { theme } = useTheme();
 
     return (
-       <div className={styles.card}>
+       <div className={styles.card} style={{ backgroundColor: theme.colors.bottom }}>
             <h1>{projeto.title}</h1>
             <img src={projeto.srcImg} alt={projeto.title} />
             <h3>{projeto.description}</h3>
