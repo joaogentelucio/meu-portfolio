@@ -11,25 +11,22 @@
 
 .homeContent {
     width: 100%;
-    max-width: 1400px; /* Impede que o conteúdo espalhe demais em telas gigantes */
     display: grid;
-    /* Usa auto-fit para decidir quando quebrar a linha sozinho */
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+    grid-template-columns: 1.2fr 1fr; /* Divide o espaço entre texto e imagem */
     align-items: center;
-    gap: clamp(2rem, 5vw, 5rem); /* Gap que cresce com a tela */
-    padding-top: 80px; 
+    gap: 40px;
+    padding-top: 100px; /* Compensa o header fixo */
 }
 
+/* Container do Texto */
 .homeHeader {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    /* Garante que o texto não fique colado nas bordas em mobile */
-    padding: 0 1rem;
 }
 
 .heading {
-    font-size: clamp(0.9rem, 2vw, 1.2rem) !important;
+    font-size: 1.2rem !important;
     font-weight: 500;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -37,29 +34,72 @@
 }
 
 .headingName {
-    /* O segredo da responsividade: clamp(mínimo, preferencial, máximo) */
-    font-size: clamp(2rem, 6vw, 4.5rem) !important; 
+    font-size: clamp(2.5rem, 5vw, 4.5rem) !important; /* Fonte responsiva */
     line-height: 1.1;
     font-weight: 800;
-    letter-spacing: -0.04em; /* Unidade em em para manter proporção */
+    letter-spacing: -2px;
 }
-
+  
 .mainName {
-    background: linear-gradient(90deg, #6366f1, #a855f7);
+    background: linear-gradient(90deg, #6366f1, #a855f7); /* Gradiente moderno */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    display: inline-block; /* Garante que o gradiente renderize bem */
 }
 
+/* Container da Imagem/Logo */
 .logo {
     width: 100%;
-    /* Mantém a proporção da imagem sem distorcer */
-    max-width: clamp(280px, 40vw, 550px);
+    max-width: 550px;
     height: auto;
-    margin: 0 auto;
-    position: relative;
     display: flex;
     justify-content: center;
+    position: relative;
+}
+
+/* Efeito de fundo na imagem (opcional, como no exemplo) */
+.logo::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background: #6366f1;
+    filter: blur(100px);
+    opacity: 0.2;
+    z-index: -1;
+}
+
+/* Animação do Tchau */
+.wave {
+    animation: wave-animation 2.1s infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+@keyframes wave-animation {
+    0%, 60%, 100% { transform: rotate(0deg); }
+    10%, 30% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .homeContent {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding-top: 120px;
+    }
+
+    .homeHeader {
+        align-items: center;
+    }
+
+    .logo {
+        max-width: 350px;
+        margin: 0 auto;
+    }
 }
 
 /* Esconde o efeito de brilho em telas muito pequenas para melhorar performance */
