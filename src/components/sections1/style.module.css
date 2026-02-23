@@ -6,87 +6,146 @@
 
 .section {
     width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 5%;
 } 
 
 .homeContent {
-    padding: 9rem 0 2rem !important;
-    color: whitesmoke;
-    text-align: left;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-  
-.wave {
-    animation-name: wave-animation; 
-    animation-duration: 2.1s; 
-    animation-iteration-count: infinite; 
-    transform-origin: 70% 70%; 
-    display: inline-block;
+    width: 100%;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Divide o espaço entre texto e imagem */
+    align-items: center;
+    gap: clamp(2rem, 5vw, 5rem);
+    padding-top: 80px; /* Compensa o header fixo */
 }
 
-@keyframes wave-animation {
-    0% {
-        transform: rotate(0deg);
-    }
-    10% {
-        transform: rotate(14deg);
-    } 
-    20% {
-        transform: rotate(-8deg);
-    }
-    30% {
-        transform: rotate(14deg);
-    }
-    40% {
-        transform: rotate(-4deg);
-    }
-    50% {
-        transform: rotate(10deg);
-    }
-    60% {
-        transform: rotate(0deg);
-    } /* Reset for the last half to pause */
-    100% {
-        transform: rotate(0deg);
-    }
+/* Container do Texto */
+.homeHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 1rem;
 }
 
 .heading {
-    font-size: 2.4em !important;
-    padding-left: 50px !important;
+    font-size: clamp(0.9rem, 2vw, 1.2rem) !important;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.8;
 }
 
 .headingName {
-    font-size: 2.5em !important;
-    padding-left: 45px !important;
+    font-size: clamp(2rem, 6vw, 4.5rem) !important; /* Fonte responsiva */
+    line-height: 1.1;
+    font-weight: 800;
+    letter-spacing: -0.04em;
 }
   
 .mainName {
-    color: #4169E1;
+    background: linear-gradient(90deg, #6366f1, #a855f7); /* Gradiente moderno */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
+/* Container da Imagem/Logo */
 .logo {
-    width: 600px; 
-    height: 600px; 
+    width: 100%;
+    max-width: clamp(280px, 40vw, 550px);
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
-@media (max-width: 800px) {
+/* Efeito de fundo na imagem (opcional, como no exemplo) */
+.logo::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background: #6366f1;
+    filter: blur(100px);
+    opacity: 0.2;
+    z-index: -1;
+}
+
+/* Animação do Tchau */
+.wave {
+    animation: wave-animation 2.1s infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+@keyframes wave-animation {
+    0%, 60%, 100% { transform: rotate(0deg); }
+    10%, 30% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
     .homeContent {
-        padding: 0 !important;
-        padding-top: 50px !important;
-        flex-direction: column;
-        align-items: center;
-        gap: 50px;
-        position: relative;
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding-top: 120px;
     }
+
     .homeHeader {
-        position: relative;
-        right: 0;
+        align-items: center;
     }
+
     .logo {
-        width: 300px; 
-        height: 300px; 
+        max-width: 350px;
+        margin: 0 auto;
     }
+}
+
+@media (min-width: 768px) {
+    .logo::after {
+        content: '';
+        position: absolute;
+        width: 80%;
+        height: 80%;
+        background: #6366f1;
+        filter: blur(100px);
+        opacity: 0.15;
+        z-index: -1;
+        top: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 1rem 3%;
+        align-items: flex-start; /* Começa do topo se a tela for muito baixa */
+    }
+
+    .homeContent {
+        grid-template-columns: 1fr; /* Força uma coluna */
+        text-align: center;
+        padding-top: 100px;
+        gap: 3rem;
+    }
+
+    .homeHeader {
+        order: 1; /* Texto em cima */
+        align-items: center;
+    }
+
+    .logo {
+        order: 2; /* Imagem embaixo */
+    }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+    .section { height: auto; padding: 100px 0; }
 }
