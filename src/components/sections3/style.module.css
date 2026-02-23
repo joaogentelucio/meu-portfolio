@@ -34,7 +34,7 @@
   object-fit: cover;
   border-radius: 32px; /* Quadrado arredondado é mais moderno que círculo total */
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-  border: 8px solid #fff;
+  border: 50% solid #fff;
   transition: transform 0.3s ease;
 }
 
