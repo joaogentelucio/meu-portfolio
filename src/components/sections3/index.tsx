@@ -33,7 +33,7 @@ const Section3: React.FC = () => {
           <a href='https://api.whatsapp.com/send?phone=5527997333212&text=Olá! Gostaria de saber mais sobre as soluções de tecnologia que vocês oferecem para empresas." ' target="_blank">
           <p className={styles.icon}><FaWhatsapp className={styles.whatsApp}/></p>
           </a>
-          <a href='https://www.instagram.com/joaovitorazevedojv' target="_blank">
+          <a href='https://www.instagram.com/joao.gentelucio' target="_blank">
           <p className={styles.icon}><FaInstagram className={styles.instagram}/></p>
           </a>
           <a href='https://www.linkedin.com/in/jo%C3%A3o-vitor-gentelucio-de-azevedo-102baa235' target="_blank">

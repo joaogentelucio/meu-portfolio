@@ -12,9 +12,9 @@ export default function Card({ projeto }: { projeto: Projeto }) {
             <h3 style={{ color: theme.colors.primary }}>{projeto.description}</h3>
             <p style={{ color: theme.colors.silver }}>{projeto.technologies}</p>
             <div className={styles.cardLinks} style={{ color: theme.colors.primary}}>
-                <a href={projeto.websiteURL} target="_blank" rel="noopener noreferrer">Website</a> 
+                <a href={projeto.websiteURL} target="_blank" rel="noopener noreferrer" style={{ color: theme.colors.primary }}>Website</a> 
                 <span style={{ color: theme.colors.text }}>|</span>
-                <a href={projeto.codeURL} target="_blank" rel="noopener noreferrer"> Code</a>
+                <a href={projeto.codeURL} target="_blank" rel="noopener noreferrer" style={{ color: theme.colors.primary }}> Code</a>
             </div>
         </div> 
     )
