@@ -26,7 +26,7 @@ export default function Section1({ scrollToSection }: HeaderProps) {
             </h1>
             <h1 className={styles.headingName}>
               Eu sou
-              <strong className={styles.mainName} style={{ color: themes.colors.text}}> João Vitor</strong>
+              <strong className={styles.mainName} style={{ color: theme.colors.text}}> João Vitor</strong>
               
             </h1>
 
