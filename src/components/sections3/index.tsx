@@ -31,10 +31,10 @@ const Section3: React.FC = () => {
       <div className={styles.groupLink}>
         <span className={styles.linkSociais} style={{  backgroundColor: theme.colors.background }}>
           <a href='https://api.whatsapp.com/send?phone=5527997333212&text=Olá! Gostaria de saber mais sobre as soluções de tecnologia que vocês oferecem para empresas." ' target="_blank">
-          <p className={styles.icon} style={{  backgroundColor: theme.colors.bottom }}><FaWhatsapp className={styles.whatsApp} style={{  color: theme.colors.text }}/></p>
+          <p className={styles.icon} style={{  backgroundColor: theme.colors.bottom,  }}><FaWhatsapp className={styles.whatsApp}/></p>
           </a>
           <a href='https://www.instagram.com/joao.gentelucio' target="_blank">
-          <p className={styles.icon} style={{  backgroundColor: theme.colors.bottom }}><FaInstagram className={styles.instagram}/></p>
+          <p className={styles.icon} style={{  backgroundColor: theme.colors.bottom, "--icon-color": theme.colors.text } as React.CSSProperties }}><FaInstagram className={styles.instagram}/></p>
           </a>
           <a href='https://www.linkedin.com/in/jo%C3%A3o-vitor-gentelucio-de-azevedo-102baa235' target="_blank">
           <p className={styles.icon} style={{  backgroundColor: theme.colors.bottom }}><FaLinkedin className={styles.linkedin}/></p>
