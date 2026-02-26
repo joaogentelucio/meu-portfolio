@@ -1,7 +1,6 @@
 import { useTheme } from '@/context/ThemeContext';
 import themes from '@/themes'; 
 import styles from './style.module.css';
-import Switch from '../switch';
 
 interface HeaderProps {
   scrollToSection: (id: string) => void;
@@ -56,7 +55,6 @@ export default function HeaderComponent({ scrollToSection }: HeaderProps) {
       </nav>
 
       <div className={styles.actions}>
-        <Switch />
         <button className={styles.ctaButton}>
           Contato
           <span>↗</span>
