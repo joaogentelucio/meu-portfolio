@@ -8,7 +8,6 @@ interface HeaderProps {
 
 export default function HeaderComponent({ scrollToSection }: HeaderProps) {
   const { theme } = useTheme();
-  const isDark = theme === themes.darkTheme;
 
   return (
     <header 
@@ -19,7 +18,7 @@ export default function HeaderComponent({ scrollToSection }: HeaderProps) {
       }}
     >
       <div className={styles.logo}>
-        <span style={{ color: theme.colors.text }}>J</span>oão.
+        <span>J</span><p style={{ color: theme.colors.text }}>oão.</p>
       </div>
 
       <nav className={styles.nav}>
