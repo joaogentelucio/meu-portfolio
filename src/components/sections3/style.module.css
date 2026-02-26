@@ -109,7 +109,7 @@
 
 /* WhatsApp */
 .whatsApp {
-  color: white;
+  color: var(--icon-color);
   transition: color 0.3s ease;
 }
 
