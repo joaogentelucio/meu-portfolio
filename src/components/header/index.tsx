@@ -1,6 +1,5 @@
-import { useTheme } from '@/context/ThemeContext';
-import themes from '@/themes'; 
 import styles from './style.module.css';
+import { useTheme } from '@/context/ThemeContext';
 
 interface HeaderProps {
   scrollToSection: (id: string) => void;
