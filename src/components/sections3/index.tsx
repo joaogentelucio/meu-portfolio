@@ -18,7 +18,7 @@ const Section3: React.FC = () => {
 
       <div className={styles.sobreMim}>
         <h3>Sobre Mim</h3>
-        <p>
+        <p style={{  color: theme.colors.silver }}>
           Minhas experiências são refletidas nos projetos que desenvolvi e disponibilizei no 
           GitHub, onde aplico na prática os conhecimentos adquiridos em cada stack.
           Atuo com desenvolvimento full stack, utilizando <strong>JavaScript</strong>, <strong>React.js</strong> e <strong>React Native</strong> para criar interfaces modernas e funcionais,
