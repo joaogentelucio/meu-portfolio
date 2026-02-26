@@ -9,7 +9,7 @@ const Section3: React.FC = () => {
   return (
     <section id="section3" className={styles.container} style={{  color: theme.colors.text }}>
       <div className={styles.infoGroup}>
-      <div className={styles.info} style={{  border-color: theme.colors.bottom }}>
+      <div className={styles.info} style={{  borderColor: theme.colors.bottom }}>
         <div className={styles.user}>
           <img src='https://raw.githubusercontent.com/joaogentelucio/meu-portfolio/refs/heads/main/src/assets/user.png' />
         </div>
