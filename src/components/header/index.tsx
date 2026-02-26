@@ -53,7 +53,7 @@ export default function HeaderComponent({ scrollToSection }: HeaderProps) {
       </nav>
 
       <div className={styles.actions}>
-        <button className={styles.ctaButton} style={{ backgroundColor: theme.colors.backgroung, color: theme.colors.text }}>
+        <button className={styles.ctaButton} style={{ backgroundColor: theme.colors.background, color: theme.colors.text }}>
           Contato
           <span>↗</span>
         </button>
