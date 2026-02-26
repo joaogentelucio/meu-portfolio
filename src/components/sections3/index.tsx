@@ -36,18 +36,15 @@ const Section3: React.FC = () => {
             )}`}
             target="_blank"
             rel="noopener noreferrer"
+            className={styles.icon}
+            style={
+              {
+                backgroundColor: theme.colors.bottom,
+                "--icon-color": theme.colors.text,
+              } as React.CSSProperties
+            }
           >
-            <p 
-              className={styles.icon} 
-              style={
-                {
-                  backgroundColor: theme.colors.bottom,
-                  "--icon-color": theme.colors.text,
-                } as React.CSSProperties
-              }
-            >
-                <FaWhatsapp className={styles.whatsApp}/>
-            </p>
+            <FaWhatsapp className={styles.whatsApp}/>
           </a>
           <a href='https://www.instagram.com/joao.gentelucio' target="_blank">
           <p className={styles.icon} style={{  backgroundColor: theme.colors.bottom, "--icon-color": theme.colors.text } as React.CSSProperties }}><FaInstagram className={styles.instagram}/></p>
