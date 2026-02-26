@@ -9,9 +9,9 @@ const Section3: React.FC = () => {
   return (
     <section id="section3" className={styles.container} style={{  color: theme.colors.text }}>
       <div className={styles.infoGroup}>
-      <div className={styles.info} style={{  borderColor: theme.colors.bottom }}>
+      <div className={styles.info}>
         <div className={styles.user}>
-          <img src='https://raw.githubusercontent.com/joaogentelucio/meu-portfolio/refs/heads/main/src/assets/user.png' />
+          <img src='https://raw.githubusercontent.com/joaogentelucio/meu-portfolio/refs/heads/main/src/assets/user.png' style={{  borderColor: theme.colors.bottom }} />
         </div>
         <h2>João Vitor</h2>
       </div>
