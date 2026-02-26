@@ -18,7 +18,7 @@ export default function HeaderComponent({ scrollToSection }: HeaderProps) {
     >
       <div className={styles.logo}>
         <span className={styles.logoHighlight}>J</span>
-        <span className={styles.logoText}>oão.</span>
+        <span className={styles.logoText} style={{ color: theme.colors.text }}>oão.</span>
       </div>
 
       <nav className={styles.nav}>
