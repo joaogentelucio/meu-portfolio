@@ -13,12 +13,12 @@ const Section3: React.FC = () => {
         <div className={styles.user}>
           <img src='https://raw.githubusercontent.com/joaogentelucio/meu-portfolio/refs/heads/main/src/assets/user.png' style={{  borderColor: theme.colors.bottom }} />
         </div>
-        <h2>João Vitor</h2>
+        <h2 style={{  color: theme.colors.text }}>João Vitor</h2>
       </div>
 
       <div className={styles.sobreMim}>
         <h3>Sobre Mim</h3>
-        <p style={{  color: theme.colors.silver }}>
+        <p style={{  color: theme.colors.text }}>
           Minhas experiências são refletidas nos projetos que desenvolvi e disponibilizei no 
           GitHub, onde aplico na prática os conhecimentos adquiridos em cada stack.
           Atuo com desenvolvimento full stack, utilizando <strong>JavaScript</strong>, <strong>React.js</strong> e <strong>React Native</strong> para criar interfaces modernas e funcionais,
@@ -29,22 +29,22 @@ const Section3: React.FC = () => {
       </div>
 
       <div className={styles.groupLink}>
-        <span className={styles.linkSociais}>
+        <span className={styles.linkSociais} style={{  backgroundColor: theme.colors.background }}>
           <a href='https://api.whatsapp.com/send?phone=5527997333212&text=Olá! Gostaria de saber mais sobre as soluções de tecnologia que vocês oferecem para empresas." ' target="_blank">
-          <p className={styles.icon}><FaWhatsapp className={styles.whatsApp}/></p>
+          <p className={styles.icon} style={{  backgroundColor: theme.colors.bottom }}><FaWhatsapp className={styles.whatsApp}/></p>
           </a>
           <a href='https://www.instagram.com/joao.gentelucio' target="_blank">
-          <p className={styles.icon}><FaInstagram className={styles.instagram}/></p>
+          <p className={styles.icon} style={{  backgroundColor: theme.colors.bottom }}><FaInstagram className={styles.instagram}/></p>
           </a>
           <a href='https://www.linkedin.com/in/jo%C3%A3o-vitor-gentelucio-de-azevedo-102baa235' target="_blank">
-          <p className={styles.icon}><FaLinkedin className={styles.linkedin}/></p>
+          <p className={styles.icon} style={{  backgroundColor: theme.colors.bottom }}><FaLinkedin className={styles.linkedin}/></p>
           </a>
           <a href='https://github.com/joaogentelucio?tab=repositories' target="_blank">
-          <p className={styles.icon}><FaGithub className={styles.gitHub}/></p>
+          <p className={styles.icon} style={{  backgroundColor: theme.colors.bottom }}><FaGithub className={styles.gitHub}/></p>
           </a>
         </span>
       </div>
-      <footer className={styles.footer}>
+      <footer className={styles.footer} style={{  color: theme.colors.text }}>
         <p>Copyright &copy; 2025 - Desenvolvido por João Vitor.</p>
       </footer>
     </section>
