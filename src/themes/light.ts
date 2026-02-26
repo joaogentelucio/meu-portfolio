@@ -9,7 +9,7 @@ const lightTheme = {
     background: '#ffffff',
     white: '#fff',
     black: '#000',
-    bottom: '#F3F4F6',
+    bottom: '#e0e0e0',
     grey21: '#363636',
   },
 }
