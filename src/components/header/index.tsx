@@ -14,12 +14,12 @@ export default function HeaderComponent({ scrollToSection }: HeaderProps) {
     <header 
       className={styles.header} 
       style={{ 
-        backgroundColor: isDark ? 'rgba(0, 0, 0, 0.7)' : 'rgba(255, 255, 255, 0.7)',
+        backgroundColor: theme.colors.bottom,
         color: theme.colors.text 
       }}
     >
       <div className={styles.logo}>
-        <span style={{ color: '#6366f1' }}>J</span>oão.
+        <span style={{ color: theme.colors.text }}>J</span>oão.
       </div>
 
       <nav className={styles.nav}>
@@ -55,7 +55,7 @@ export default function HeaderComponent({ scrollToSection }: HeaderProps) {
       </nav>
 
       <div className={styles.actions}>
-        <button className={styles.ctaButton}>
+        <button className={styles.ctaButton} style={{ backgroundColor: theme.colors.backgroung, color: theme.colors.text }}>
           Contato
           <span>↗</span>
         </button>
