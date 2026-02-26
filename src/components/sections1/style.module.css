@@ -43,12 +43,6 @@
     font-weight: 800;
     letter-spacing: -2px;
 }
-  
-.mainName {
-    background: linear-gradient(90deg, #6366f1, #a855f7); /* Gradiente moderno */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
 /* Container da Imagem/Logo */
 .logo {
