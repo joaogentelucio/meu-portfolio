@@ -14,10 +14,14 @@ export default function Home() {
   };
 
   return (
-    <main className={styles.main} style={{ color: theme.colors.text }}>
-      <Section1 scrollToSection={scrollToSection} />
-      <Section2 />
-      <Section3 />
-    </main>
+    <>
+      <div className={styles.background} />
+  
+      <main className={styles.main} style={{ color: theme.colors.text }}>
+        <Section1 scrollToSection={scrollToSection} />
+        <Section2 />
+        <Section3 />
+      </main>
+    </>
   );
 };
