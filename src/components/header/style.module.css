@@ -33,7 +33,8 @@
 .logoHighlight {
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: linear-gradient(#8BC34A, #00796B);
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(90deg, #6366f1, #a855f7);
   color: transparent;
 }
 
