@@ -46,14 +46,43 @@ const Section3: React.FC = () => {
           >
             <FaWhatsapp className={styles.whatsApp}/>
           </a>
-          <a href='https://www.instagram.com/joao.gentelucio' target="_blank">
-          <p className={styles.icon} style={{  backgroundColor: theme.colors.bottom, "--icon-color": theme.colors.text } as React.CSSProperties }}><FaInstagram className={styles.instagram}/></p>
+          <a 
+            href='https://www.instagram.com/joao.gentelucio' 
+            target="_blank" 
+            className={styles.icon}
+            style={
+              {
+                backgroundColor: theme.colors.bottom,
+                "--icon-color": theme.colors.text,
+              } as React.CSSProperties
+            }>
+            <FaInstagram className={styles.instagram}/>
           </a>
-          <a href='https://www.linkedin.com/in/jo%C3%A3o-vitor-gentelucio-de-azevedo-102baa235' target="_blank">
-          <p className={styles.icon} style={{  backgroundColor: theme.colors.bottom }}><FaLinkedin className={styles.linkedin}/></p>
+          <a 
+            href='https://www.linkedin.com/in/jo%C3%A3o-vitor-gentelucio-de-azevedo-102baa235' 
+            target="_blank"
+            className={styles.icon}
+            style={
+              {
+                backgroundColor: theme.colors.bottom,
+                "--icon-color": theme.colors.text,
+              } as React.CSSProperties
+            }
+          >
+            <FaLinkedin className={styles.linkedin}/>
           </a>
-          <a href='https://github.com/joaogentelucio?tab=repositories' target="_blank">
-          <p className={styles.icon} style={{  backgroundColor: theme.colors.bottom }}><FaGithub className={styles.gitHub}/></p>
+          <a 
+            href='https://github.com/joaogentelucio?tab=repositories' 
+            target="_blank"
+            className={styles.icon}
+            style={
+              {
+                backgroundColor: theme.colors.bottom,
+                "--icon-color": theme.colors.text,
+              } as React.CSSProperties
+            }
+          >
+            <FaGithub className={styles.gitHub}/>
           </a>
         </span>
       </div>
