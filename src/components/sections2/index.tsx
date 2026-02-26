@@ -7,19 +7,23 @@ export default function Section2() {
   const ref = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          ref.current?.classList.add("visible");
-        }
-      },
-      { threshold: 0.15 }
-    );
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (!ref.current) return;
 
-    if (ref.current) observer.observe(ref.current);
+      if (entry.isIntersecting) {
+        ref.current.classList.add("visible");
+      } else {
+        ref.current.classList.remove("visible");
+      }
+    },
+    { threshold: 0.15 }
+  );
 
-    return () => observer.disconnect();
-  }, []);
+  if (ref.current) observer.observe(ref.current);
+
+  return () => observer.disconnect();
+}, []);
   
   return (
     <section
