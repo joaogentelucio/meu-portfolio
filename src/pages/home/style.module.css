@@ -11,35 +11,12 @@
 
   background:
     radial-gradient(
-      circle at 50% 50%,
-      rgba(65, 105, 225, 0.45) 0%,
-      rgba(30, 58, 138, 0.6) 35%,
-      rgba(15, 23, 42, 0.95) 70%
-    ),
-    #050814;
-}
-
-.background::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.03;
-
-  background:
-    repeating-linear-gradient(
-      0deg,
-      rgba(255,255,255,0.03) 0px,
-      rgba(255,255,255,0.03) 1px,
-      transparent 1px,
-      transparent 2px
-    ),
-    repeating-linear-gradient(
-      90deg,
-      rgba(255,255,255,0.03) 0px,
-      rgba(255,255,255,0.03) 1px,
-      transparent 1px,
-      transparent 2px
+      circle at center,
+      #5b5bff 0%,
+      #4338ca 20%,
+      #1e1b8f 45%,
+      #0a0f2d 70%,
+      #02040f 100%
     );
 }
 
