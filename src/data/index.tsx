@@ -9,6 +9,14 @@ export interface Projeto {
 
 export const projetos: Projeto[] = [
   {
+    title: "Gastos",
+    srcImg: "https://raw.githubusercontent.com/joaogentelucio/meu-portfolio/refs/heads/main/src/assets/card4.png",
+    description: "Controle de gastos pessoais, onde o usuário pode cadastrar seus gastos e visualizar um gráfico com o total gasto por categoria.",
+    technologies: "Tecnologias: C# - React.JS - Vite - Vercel - Render",
+    websiteURL: "https://gastos.codpex.com.br",
+    codeURL: "https://github.com/joaogentelucio/gastos",
+  },
+  {
     title: "Validador",
     srcImg: "https://raw.githubusercontent.com/joaogentelucio/meu-portfolio/refs/heads/main/src/assets/card1.png",
     description: "Valida os inputs de email e senha impedindo que passem nulos.",
@@ -31,13 +39,5 @@ export const projetos: Projeto[] = [
     technologies: "Tecnologias: PHP - JavaScript - HTML - CSS - Netlify",
     websiteURL: "https://cruds-php.netlify.app",
     codeURL: "https://github.com/joaogentelucio/meusistema",
-  },
-  {
-    title: "Portfólio(Este Aqui)",
-    srcImg: "https://raw.githubusercontent.com/joaogentelucio/meu-portfolio/refs/heads/main/src/assets/card4.png",
-    description: "Meu portfólio para mostrar meus projetos e aprendizados.",
-    technologies: "Tecnologias: JavaScript - React.JS - Vite - Vercel",
-    websiteURL: "https://meu-portfolio-inky-nine.vercel.app",
-    codeURL: "https://github.com/joaogentelucio/meu-portfolio",
   },
 ];
