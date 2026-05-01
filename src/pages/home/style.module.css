@@ -4,10 +4,25 @@
     box-sizing: border-box;
 }
 
+.background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+
+  background:
+    radial-gradient(
+      circle at center,
+      #5b5bff 0%,
+      #4338ca 20%,
+      #1e1b8f 45%,
+      #0a0f2d 70%,
+      #02040f 100%
+    );
+}
+
 .main {
-    width: 100%;
-    height: 100%;
-    background: url(../../assets/Fundo.png) no-repeat center/cover;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }

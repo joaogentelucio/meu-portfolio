@@ -9,7 +9,7 @@ const darkTheme = {
     background: '#121212',
     white: '#fff',
     black: '#000',
-    bottom: '#1C1C1C',
+    bottom: '#303030',
     grey21: '#363636',
   },
 }
