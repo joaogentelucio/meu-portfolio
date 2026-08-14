@@ -21,9 +21,11 @@ const Section3: React.FC = () => {
         <p style={{  color: theme.colors.text }}>
           Minhas experiências são refletidas nos projetos que desenvolvi e disponibilizei no 
           GitHub, onde aplico na prática os conhecimentos adquiridos em cada stack.
-          Atuo com desenvolvimento full stack, utilizando <strong>JavaScript</strong>, <strong>React.js</strong> e <strong>React Native</strong> para criar interfaces modernas e funcionais,
-          além de <strong>C#</strong> com <strong>.NET</strong> para construção de <strong>APIs REST</strong> seguras e escaláveis. 
-          Tenho compromisso com performance, boas práticas de código e foco na entrega de soluções eficientes de ponta a ponta.
+          Desenvolvo aplicações utilizando tecnologias como <strong>C#</strong>, <strong>.NET
+          </strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>React.js
+          </strong> e <strong>React Native</strong>, trabalhando com interfaces, <strong>APIs REST
+          </strong> e bancos de dados. Busco aplicar boas práticas de código, organização e performance 
+          na construção de soluções completas.
         </p>
       </div>
       </div>
