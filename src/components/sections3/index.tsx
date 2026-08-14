@@ -13,7 +13,6 @@ const Section3: React.FC = () => {
         <div className={styles.user}>
           <img src='https://raw.githubusercontent.com/joaogentelucio/meu-portfolio/refs/heads/main/src/assets/user.png' style={{  borderColor: theme.colors.bottom }} />
         </div>
-        <h2 style={{  color: theme.colors.text }}>João Vitor</h2>
       </div>
 
       <div className={styles.sobreMim}>
