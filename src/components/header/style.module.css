@@ -100,8 +100,35 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsividade básica */
 @media (max-width: 768px) {
-  .nav { display: none; } /* Idealmente aqui você faria um menu hambúrguer */
-  .header { padding: 0 5%; }
+  .header {
+    padding: 0 5%;
+  }
+
+  .navList {
+    gap: 14px;
+  }
+
+  .navButton {
+    font-size: 0.8rem;
+  }
+
+  .ctaButton {
+    padding: 8px 14px;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .actions {
+    display: none;
+  }
+
+  .navList {
+    gap: 12px;
+  }
+
+  .navButton {
+    font-size: 0.78rem;
+  }
 }
